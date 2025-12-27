@@ -1,0 +1,106 @@
+✅ Types of SQL Commands
+
+SQL commands are mainly divided into 5 types:
+
+1️⃣ DDL – Data Definition Language
+
+👉 Used to define or modify database structure
+
+Commands:
+
+CREATE
+
+ALTER
+
+DROP
+
+TRUNCATE
+
+RENAME
+
+Example:
+
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+2️⃣ DML – Data Manipulation Language
+
+👉 Used to insert, update, delete data
+
+Commands:
+
+INSERT
+
+UPDATE
+
+DELETE
+
+Example:
+
+INSERT INTO student VALUES (1, 'Maria');
+
+3️⃣ DQL – Data Query Language
+
+👉 Used to retrieve data
+
+Command:
+
+SELECT
+
+Example:
+
+SELECT * FROM student;
+
+4️⃣ DCL – Data Control Language
+
+👉 Used to control access & permissions
+
+Commands:
+
+GRANT
+
+REVOKE
+
+Example:
+
+GRANT SELECT ON student TO user1;
+
+5️⃣ TCL – Transaction Control Language
+
+👉 Used to manage transactions
+
+Commands:
+
+COMMIT
+
+ROLLBACK
+
+SAVEPOINT
+
+Example:
+
+COMMIT;
+
+🧠 Easy memory trick (Exam tip)
+
+👉 DDDDT
+
+DDL
+
+DML
+
+DQL
+
+DCL
+
+TCL
+
+| Type | Purpose      |
+| ---- | ------------ |
+| DDL  | Structure    |
+| DML  | Data change  |
+| DQL  | Data fetch   |
+| DCL  | Permissions  |
+| TCL  | Transactions |
