@@ -1,0 +1,17 @@
+HAVING CLAUSE
+ * Definition
+
+The HAVING clause is used to filter groups of rows formed by the GROUP BY clause.
+It is mainly used with aggregate functions like COUNT(), SUM(), AVG(), MAX(), and MIN().
+
+* Syntax
+SELECT column_name, aggregate_function(column_name)
+FROM table_name
+GROUP BY column_name
+HAVING condition;
+
+* Why HAVING is needed?
+
+WHERE cannot be used with aggregate functions
+
+HAVING applies conditions after grouping
