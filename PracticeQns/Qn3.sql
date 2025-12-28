@@ -32,7 +32,7 @@ INSERT INTO payment VALUES
 (109, 'Isabella Martinez', 'Netbanking', 'Nashville'),
 (110, 'Jackson Brooks', 'Credit Card', 'Boston');
 
-SELECT mode, COUNT(*) AS total_payment
+SELECT mode, COUNT(customer)---or (SELECT mode, COUNT(*) AS total_payment)
 FROM payment
 GROUP BY mode;
 /*
