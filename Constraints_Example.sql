@@ -74,3 +74,45 @@ VALUES (101, 'Anu');
 
 SELECT * FROM student;
 
+---CHECK Example 1
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT CHECK (age >= 18)
+);
+INSERT INTO student VALUES (101, 'Anu', 20);
+---Example 2: CHECK with multiple conditions
+CREATE TABLE employee (
+    emp_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    salary INT CHECK (salary >= 10000),
+    age INT CHECK (age BETWEEN 21 AND 60)
+);
+INSERT INTO employee VALUES (201, 'Merin', 25000, 30);
+---Example 3: CHECK on VARCHAR column
+CREATE TABLE account (
+    acc_no INT PRIMARY KEY,
+    account_type VARCHAR(20),
+    CHECK (account_type IN ('Savings', 'Current'))
+);
+INSERT INTO account VALUES (1001, 'Savings');
+---Example 4: Table-level CHECK constraint
+CREATE TABLE product (
+    pid INT,
+    price INT,
+    discount INT,
+    CHECK (discount <= price)---Discount can never be greater than price.
+);
+/* 
+| Constraint  | Purpose                |
+| ----------- | ---------------------- |
+| NOT NULL    | Prevents NULL          |
+| DEFAULT     | Auto value             |
+| CHECK       | Validates condition    |
+| UNIQUE      | No duplicates          |
+| PRIMARY KEY | Unique + Not Null      |
+| FOREIGN KEY | Maintains relationship |
+
+*/
+
+
