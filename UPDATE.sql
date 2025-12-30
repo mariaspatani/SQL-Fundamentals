@@ -26,7 +26,7 @@ UPDATE student SET age = age + 1 WHERE id = 101;
 UPDATE student SET city = NULL WHERE id = 103;
 
 UPDATE student
-SET marks = (SELECT AVG(marks) FROM student)
+SET marks = (SELECT AVG(marks) FROM student)---(SELECT AVG(marks) FROM student) → average marks of all students,That average value is assigned to Rahul (id = 102)
 WHERE id = 102;
 
 UPDATE student SET marks = 60;
