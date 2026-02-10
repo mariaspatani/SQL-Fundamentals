@@ -63,13 +63,7 @@ CREATE TABLE Book_Return (
     FOREIGN KEY (Issue_Id) REFERENCES Book_Issue(Issue_Id)
 );
 
-CREATE TABLE Book_Return (
-    Issue_Id INT PRIMARY KEY,
-    Actual_Date_of_Return DATE,
-    Late_Days INT,
-    Late_Fee DECIMAL(8,2),
-    FOREIGN KEY (Issue_Id) REFERENCES Book_Issue(Issue_Id)
-);
+
 
 CREATE TABLE Language (
     Language_Id INT PRIMARY KEY,
