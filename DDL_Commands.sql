@@ -21,9 +21,8 @@ CREATE TABLE Author (
 );
 
 CREATE TABLE Book_Author (
-    Book_Id INT,
-    Author_Id INT,
-    PRIMARY KEY (Book_Id, Author_Id),
+    Book_Id INT PRIMARY KEY,
+    Author_Id INT PRIMARY KEY,
     FOREIGN KEY (Book_Id) REFERENCES Book(Book_Id),
     FOREIGN KEY (Author_Id) REFERENCES Author(Author_Id)
 );
