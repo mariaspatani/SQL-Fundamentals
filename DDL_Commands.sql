@@ -64,7 +64,6 @@ CREATE TABLE Book_Return (
 );
 
 
-
 CREATE TABLE Language (
     Language_Id INT PRIMARY KEY,
     Name VARCHAR(50)
