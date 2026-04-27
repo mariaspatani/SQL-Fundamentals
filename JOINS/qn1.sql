@@ -16,6 +16,7 @@ insert into emp values(3,'geetha',70000,103);
 insert into dept values(101,'HR');
 insert into dept values(102,'IT');
 insert into dept values(103,'Finance');
+
 --display empname and dept name
 select e.emp_name ,d.deptname
 FROM emp e JOIN dept d
