@@ -6,7 +6,6 @@ A complete **SQL learning repository** covering **basic to advanced concepts**, 
 * 💻 Beginners in SQL
 * 🧠 Interview preparation
 
----
 
 ## 📂 Project Structure
 
@@ -45,7 +44,6 @@ SQL-Fundamentals/
 └── README.md
 ```
 
----
 
 ## 🔥 Topics Covered
 
@@ -75,7 +73,6 @@ SQL-Fundamentals/
 * DCL (GRANT, REVOKE)
 * TCL (COMMIT, ROLLBACK)
 
----
 
 ## 🧪 Example Query
 
@@ -85,7 +82,6 @@ FROM Employees
 WHERE salary > 50000;
 ```
 
----
 
 ## 🎯 Why this repo?
 
@@ -94,7 +90,6 @@ WHERE salary > 50000;
 ✔ Real practice questions included
 ✔ Beginner friendly
 
----
 
 ## 🚀 How to Use
 
@@ -103,7 +98,6 @@ WHERE salary > 50000;
 3. Run in MySQL / Oracle / PostgreSQL
 4. Practice and modify queries
 
----
 
 ## ⭐ Support
 
@@ -112,7 +106,6 @@ If this helped you:
 👉 Give a **star ⭐**
 👉 Share with your classmates
 
----
 
 ## 🤝 Contribution
 
@@ -122,7 +115,7 @@ Want to improve this repo?
 * Add explanations
 * Improve formatting
 
----
+
 
 💡 *“Practice SQL daily — consistency beats complexity.”*
 🚀 *Keep learning. Keep building.*
