@@ -116,6 +116,5 @@ Want to improve this repo?
 * Improve formatting
 
 
-
 💡 *“Practice SQL daily — consistency beats complexity.”*
 🚀 *Keep learning. Keep building.*
