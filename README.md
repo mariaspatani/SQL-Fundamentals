@@ -6,7 +6,6 @@ A complete **SQL learning repository** covering **basic to advanced concepts**, 
 * 💻 Beginners in SQL
 * 🧠 Interview preparation
 
-
 ## 📂 Project Structure
 
 ```text
