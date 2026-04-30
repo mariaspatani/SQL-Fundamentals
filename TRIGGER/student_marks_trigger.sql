@@ -3,6 +3,8 @@ CREATE TABLE Students (
     student_name VARCHAR(50),
     marks INT
 );
+-- Test query
+INSERT INTO Students VALUES (1, 'Anu', 95);
 
 CREATE OR REPLACE TRIGGER check_marks
 BEFORE INSERT OR UPDATE ON Students
