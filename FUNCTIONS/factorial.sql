@@ -1,21 +1,21 @@
-CREATE OR REPLACE FUNCTION factorial(n IN NUMBER)
-RETURN NUMBER
+SET SERVEROUTPUT ON;
+CREATE OR REPLACE FUNCTION factorial(n IN INT)
+RETURN INT
 IS
     fact NUMBER := 1;
-BEGIN 
+BEGIN
     FOR i IN 1..n LOOP
-        fact := fact * i;
+        fact:= fact*i;
     END LOOP;
-
-    RETURN fact;  
+    
+    RETURN fact;
 END;
 /
-
-DECLARE 
-    num NUMBER:=&num;
-    result NUMBER;
+DECLARE
+    result INT;
 BEGIN
-    result := factorial(num);
-    DBMS_OUTPUT.PUT_LINE('Factorial = ' || result);
+     result:= factorial(5);
+     
+     DBMS_OUTPUT.PUT_LINE('Factorial = ' || result);
 END;
 /
